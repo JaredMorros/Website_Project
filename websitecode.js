@@ -1,11 +1,12 @@
-const show =(...el) => [...el].forEach(e => (e.style.display = ''));
-const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
-
+var surprising = false
 
 function Surprise(){
-    var surpriseContent = document.querySelectorAll('.Surprise');
-    for (var x = 0; x < surpriseContent.length; x++) {
-        var target = surpriseContent[x]
-        show(target)
+    if (surprising == false){
+        document.getElementById("surprise").style.display = "block";
+        surprising = true
+    }
+    else{
+        document.getElementById("surprise").style.display = "none";
+        surprising = false
     }
 }
