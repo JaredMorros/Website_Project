@@ -7,8 +7,9 @@ body {
 }
 
 h1 {
-    color: white;
+    color: rgb(197, 6, 6);
     text-align: center;
+    border-style: solid;
 }
 
 p{
@@ -16,9 +17,33 @@ p{
     font-size: 20px;
     text-align: center
 }
+
 button{
     align-items: center;
 }
+
+#demo{
+    border-style: double;
+    border-radius: 10px
+}
+
 #photoexplainer{
     font-size: 15px;
+}
+
+a{
+    background-color:darkgreen;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+a:visited{
+    background-color:rgba(0, 100, 0, 0.712);
+}
+
+a:hover{
+    background-color:crimson;
 }
